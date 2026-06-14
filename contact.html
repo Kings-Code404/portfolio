@@ -21,8 +21,10 @@
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
 
-    <button id="themeBtn" class="theme-btn">🌙</button>
-    <button id="menuBtn" class="menu-btn">☰</button>
+    <div class="nav-actions">
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Toggle dark mode">🌙</button>
+      <button id="menuBtn" class="menu-btn" type="button" aria-label="Toggle navigation menu">☰</button>
+    </div>
   </nav>
 </header>
 
@@ -30,17 +32,17 @@
   <h2>Contact Me</h2>
 
   <div class="contact-info">
-    <p>📞 +91 8860146676</p>
-    <p>📧 sumit.kumar271773@gmail.com</p>
+    <p>📞 <a href="tel:+918860146676">+91 8860146676</a></p>
+    <p>📧 <a href="mailto:sumit.kumar271773@gmail.com">sumit.kumar271773@gmail.com</a></p>
     <p>📍 Badarpur, New Delhi, India</p>
-    <p>🔗 GitHub: https://github.com/Kings-Code404</p>
-    <p>🔗 LinkedIn: www.linkedin.com/in/sumit-kumar-b8483b411</p>
+    <p>🔗 GitHub: <a href="https://github.com/Kings-Code404" target="_blank">github.com/Kings-Code404</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/sumit-kumar-b8483b411" target="_blank">linkedin.com/in/sumit-kumar-b8483b411</a></p>
   </div>
 
   <form class="contact-form" id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message" required></textarea>
+    <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+    <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
     <button class="btn" type="submit">Send Message</button>
   </form>
 </section>
